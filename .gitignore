@@ -1,0 +1,10 @@
+Progress log.txt
+*.zip
+
+*.dbsqlite3
+
+venv/
+
+__pycache__/
+
+migrations/

@@ -1,0 +1,38 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix ex: <http://example.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Define Classes
+ex:Person rdf:type rdfs:Class.
+
+# Define Properties
+ex:hasName rdf:type rdf:Property.
+ex:hasAge rdf:type rdf:Property.
+ex:hasGender rdf:type rdf:Property.
+ex:hasBloodGroup rdf:type rdf:Property.
+ex:hasBloodPressure rdf:type rdf:Property.
+ex:hasCholesterol rdf:type rdf:Property.
+ex:hasHeartRate rdf:type rdf:Property.
+ex:isDisabled rdf:type rdf:Property.
+ex:hasDiagnosis rdf:type rdf:Property.
+
+# Define Relationships
+ex:hasName rdfs:domain ex:Person.
+ex:hasName rdfs:range xsd:string.
+ex:hasAge rdfs:domain ex:Person.
+ex:hasAge rdfs:range xsd:integer.
+ex:hasGender rdfs:domain ex:Person.
+ex:hasGender rdfs:range xsd:string.
+ex:hasBloodGroup rdfs:domain ex:Person.
+ex:hasBloodGroup rdfs:range xsd:string.
+ex:hasBloodPressure rdfs:domain ex:Person.
+ex:hasBloodPressure rdfs:range xsd:string.
+ex:hasCholesterol rdfs:domain ex:Person.
+ex:hasCholesterol rdfs:range xsd:string.
+ex:hasHeartRate rdfs:domain ex:Person.
+ex:hasHeartRate rdfs:range xsd:integer.
+ex:isDisabled rdfs:domain ex:Person.
+ex:isDisabled rdfs:range xsd:boolean.
+ex:hasDiagnosis rdfs:domain ex:Person.
+ex:hasDiagnosis rdfs:range xsd:string.

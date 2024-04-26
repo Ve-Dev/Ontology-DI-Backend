@@ -1,0 +1,5 @@
+Verifying functionality:
+
+1. One entry multiple diseases -> Split each disease into separate node: WORKING 100%
+2. Same user multiple disease entries -> Getting combined by RDF: WORKING!
+
